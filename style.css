@@ -8,20 +8,25 @@ body{
     font-family: "Karma", serif;
 }
 header{
-    height: 80px;
+    height: 60px;    
+    padding: 10px;
+    font-size: 1.2em;
     position: sticky;
     top: 0px;
-    padding: 20px;
-    font-size: 1.5em;
-    /* margin-bottom: 100px; */
-    background-color: aliceblue;
-    box-shadow: 5px 5px 10px #203040;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px #fff;
     display: flex;
     justify-content: space-around;
+}
+main{
+    padding: 20px;
+}
 
+header>:nth-child(1):hover{
+    background-color: cadetblue;
 }
 .main-container{
-    padding: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -35,10 +40,58 @@ header{
 img{
     width: 100%;
 }
+h3{
+    font-size: 1.5em;
+    margin: 10px 0;
+    font-weight: 400;
+}
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.pagination{
+    text-align: center;
+    font-size: 1.3em;
+    white-space: normal;
+    margin: 30px;
+}
+.page{
+    padding: 6px;
+    text-decoration: none;
+    color: black;
+    font-weight: 100;
+}
+.page1{
+    background-color: #000;
+    color: #fff;
+}
+.page1:hover{
+    background-color: #a9a9a9;
+    color: #fff;
+}
+.pagination>a:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+
 
 @media screen and (width>=600px) {
+    header{
+        height: 80px;    
+        padding: 20px;
+        font-size: 1.5em;
+        position: sticky;
+        top: 0px;
+        margin-bottom: 40px;
+    }
+    main{
+        padding: 0 5vw;
+    }
     .container{
         flex: 1 1 22%;
     }
-    
 }
