@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main-container{
+    text-align: center;
+}
+.container{
+    display: block;
+    margin: 10px;
+    width: 100%;
+}
+
+@media screen and (width>600px) {
+    .main-container{
+        
+        text-align: center;
+    }
+    .container{
+        display: inline-block;
+        width: 20%;
+        margin: 8px;
+    }
+    img{
+        width: 100%;
+    }
+    
+}
