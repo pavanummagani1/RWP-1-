@@ -4,8 +4,24 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: "Karma", serif;
+}
+header{
+    height: 80px;
+    position: sticky;
+    top: 0px;
+    padding: 20px;
+    font-size: 1.5em;
+    /* margin-bottom: 100px; */
+    background-color: aliceblue;
+    box-shadow: 5px 5px 10px #203040;
+    display: flex;
+    justify-content: space-around;
+
+}
 .main-container{
-    padding: 10px;
+    padding: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
